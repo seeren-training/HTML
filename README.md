@@ -2,7 +2,7 @@
 
 ## Durée
 
-21 heures.
+21 heures
 
 ___
 
@@ -12,15 +12,8 @@ Webmasters, concepteurs Web, développeurs, chefs de projets techniques.
 
 ___
 
-## Prérequis
-
-Téléchargez ce repository.
-
-* Manuellement et cliquant sur Download/Download Zip
-* Dans un terminal avec un git clone
-
-___
-
 ## Support de cours
 
 * [Wiki](https://github.com/seeren-training/HTML/wiki)
+
+___
