@@ -4,8 +4,6 @@
 
 21 heures
 
-___
-
 ## Public concerné
 
 Webmasters, concepteurs Web, développeurs, chefs de projets techniques.
