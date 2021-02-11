@@ -11,7 +11,7 @@ ___
 
 ## 📑 Selectors
 
-🔗 [Selectors](https://developer.mozilla.org/fr/docs/Web/CSS/S%C3%A9lecteurs_CSS)
+[Selectors](https://developer.mozilla.org/fr/docs/Web/CSS/S%C3%A9lecteurs_CSS)
 
 Un sélecteur est utilisé pour sélectionner les éléments auxquels appliquer les propriétés contenues dans le bloc le précédent. Un sélecteur peut être un composé de plusieurs motifs séparés par une virgule.
 
@@ -145,17 +145,17 @@ ___
 
 Vous possédez donc des expressions permettant de cibler des éléments du document afin de leur appliquer un style. Avant de découvrir des règles de stylisation, parlons de votre première organisation de règles CSS.
 
-L'erreur à ne pas commettre c'est de commencer le CSS en entassant vos règles dans un fichier sans réflexion sur sa capacité à grossir.
+> L'erreur à ne pas commettre c'est de commencer le CSS en entassant vos règles dans un fichier sans réflexion sur sa capacité à grossir.
 
 ### 🏷️ **Import**
 
-🔗 [import](https://developer.mozilla.org/fr/docs/Web/CSS/@import)
-
-La règle @ @import est utilisée afin d'importer des règles à partir d'autres feuilles de style.
+La règle @import est utilisée afin d'importer des règles à partir d'autres feuilles de style.
 
 ```css
 @import 'mon-fichier.css';
 ```
+
+🔗 [Import](https://developer.mozilla.org/fr/docs/Web/CSS/@import)
 
 L'objectif de cette règle et de toute organisation CSS et de n'avoir qu'**un seul lien vers vos styles et de les imbriquer avec des règles d'importation**.
 
@@ -229,38 +229,31 @@ ___
 
 Il est possible d'utiliser différents modes colorimétriques pour spécifier une couleur, l’hexadécimale, le rgb et le hsl. Le niveau 3 ajoute le rgba et le hsla avec un quatrième paramètre pour la couche alpha dont la valeur est comprise entre 0 et 1.
 
-> `color`: nom;
+* color: nom;
+* color: hexadécimal;
+* color: rgb(rouge, vert, bleu);
+* color: rgba(rouge, vert, bleu, alpha);
+* color: hsl(teinte , saturation, (%) luminosité);
+* opacity: (int|float) number;
 
-> `color`: hexadécimal;
-
-> `color`: rgb(rouge, vert, bleu);
-
-> `color`: rgba(rouge, vert, bleu, alpha);
-
-> `color`: hsl(teinte , saturation, (%) luminosité);
-
-> `opacity`: (int|float) number;
-
-Exemple:
 
 ```css
 * {
     color: #FF0000;
 }
 ```
+
 #### Héritage
 
 De nombreuses propriété peuvent être héritée du parent comme la couleur. Pour appliquer une propriété parente il faut utiliser la valeur inherit.
 
-> `color`: inherit;
+* color: inherit;
 
 ### 🏷️ **Background**
 
 La propriété background peut suffire pour afficher couleurs, images ou dégradés mais elles est complétée par une série de sous propriétés.
 
-> `background`: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment;
-
-Exemple:
+* background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment;
 
 ```css
 * {
@@ -317,9 +310,7 @@ La taille de la police est définie par la propriété font-size. La valeur peut
 
 L'alignement dans le conteneur peut être défini par la propriété text-align.
 
-> text-align: left|right|center|justify;
-
-Exemple:
+* text-align: left|right|center|justify;
 
 ```css
 * {
@@ -371,26 +362,26 @@ Les éléments de type block peuvent avoir une largeur et hauteur précise contr
 
 ### 🏷️ **Relatives**
 
-**Les unités relatives sont à privilégier** pour un affichage adaptatif en fonction du device et du zoom de l'utilisateur par opposition aux unités absolues.
+Les unités relatives sont à privilégier pour un affichage adaptatif en fonction du device et du zoom de l'utilisateur par opposition aux unités absolues.
 
 |Unité|Description|
-|---|---|
-|**em**|Relative à la font-size héritée|	
+|--|--|
+|em|Relative à la font-size héritée|	
 |ex|Relative à la hauteur de la font-size héritée|
 |ch|Relative à la largeur de la font-size héritée|
-|**rem**|Relative à la font-size héritée par l'élément racine|
-|**vh**|Relative à la hauteur du viewport (1/100)|
-|**vw**|Relative à la largeur du viewport (1/100)|
+|rem|Relative à la font-size héritée par l'élément racine|
+|vh|Relative à la hauteur du viewport (1/100)|
+|vw|Relative à la largeur du viewport (1/100)|
 |vmin|Relative à la hauteur ou largeur du viewport (1/100) selon la plus petite valeur|
 |vmax|Relative à la hauteur ou largeur du viewport (1/100) selon la plus grande valeur|
-|**%**|Relative à la hauteur ou largeur du conteneur|
+|%|Relative à la hauteur ou largeur du conteneur|
 
 ### 🏷️ **Absolues**
 
 Les unités absolues sont à privilégier pour un affichage papier dont le format est connu et définitif comme pour une impression par exemple. **Utiliser des valeurs absolues pour un affichage sur device est une mauvaise pratique**.
 
 |Unité|Description|
-|---|---|
+|--|--|
 |px|Représente le pixel|
 |cm|Représente le centimètre|
 |mm|Représente le millimètre|
@@ -406,7 +397,7 @@ ___
 
 La largeur d'un bloc à un impact sur les éléments qui le suivent s'ils sont flottants. En spécifiant une largeur relative à la largeur d'un device le bloc s'adapte au redimensionnement, en choisissant une valeur relative à la taille de la police le bloc s'adapte au zoom de l'utilisateur.
 
-> `width` | `min-width` | `max-width`: valeur | auto;
+* width|min-width|max-width: valeur|auto;
 
 ```css
 * {
@@ -418,9 +409,7 @@ La largeur d'un bloc à un impact sur les éléments qui le suivent s'ils sont f
 
 La hauteur d'un bloc à un impact sur les éléments qui ne sont pas à la fois flottants et juxtaposés au bloc. Le pourcentage pour définir une hauteur n'est pas pris en charge pour un élément sans position ou n'ayant pas un parent positionné.
 
-> `height` | `min-height` | `max-height`: valeur | auto;
-
-Exemple:
+* height|min-height|max-height: valeur|auto;
 
 ```css
 * {
@@ -432,9 +421,7 @@ Exemple:
 
 Les marges pour chaque coté du bloc peuvent être définies avec une déclaration courte ou une par une. En spécifiant une seule valeur à la propriété margin elle s'applique à chaque coté. En en spécifiant deux, la première indique une valeur pour le haut et le bas et la seconde pour la droite et la gauche. En spécifiant trois valeurs, la troisième définit la marge du bas. Le pourcentage appliqué aux marges haut et bas utilise une valeur relative à la largeur du device et non à sa hauteur.
 
-> `margin`: tous[, coté[, bas[, gauche]]];
-
-Exemple:
+* margin: tous[, coté[, bas[, gauche]]];
 
 ```css
 * {
@@ -457,9 +444,7 @@ Les mêmes marges peuvent se définir une par une de la façon suivante.
 
 La propriété padding définit des marges internes au bloc, la taille du padding s'ajoute à la taille de l'élément. La déclaration du padding pour chaque coté se fait de la même façon que pour margin.
 
-> `padding`: tous[, coté[, bas[, gauche]]];
-
-Exemple:
+* padding: tous[, coté[, bas[, gauche]]];
 
 ```css
 * {
@@ -481,7 +466,7 @@ ___
 
 Cette propriété définit le type et donc le comportement du bloc représenté par un élément. Par défaut certaines balises comme une div ou un paragraphe sont de type bloc et imposent un retour chariot après leur contenu, d'autres éléments sont de type en ligne comme une citation ou un lien. Display sert à modifier le type de bloc d'un élément.
 
-> `display`: block|none|inline|inline-block|...
+* display: block|none|inline|inline-block|...
 
 #### block
 
@@ -535,9 +520,7 @@ Quand une ligne est sautée entre deux éléments en inline-block, un espace sé
 
 En utilisant la propriété flottant sur un élément son type de bloc devient block mais **il échappe au flux de son conteneur**, c'est à dire que la hauteur de son parent n'est pas impactée par la hauteur de l'élément flottant tant que le float n'est pas nettoyé.
 
-> `float`: none|left|right;
-
-Exemple:
+* float: none|left|right;
 
 ```css
 .item {
@@ -549,9 +532,7 @@ Exemple:
 
 Clear nettoie les flottement en permettant aux éléments flottants du même scope placés avant l'élément possédant la propriété clear de rentrer dans le flux.
 
-> `clear`: none|left|right|both;
-
-Exemple:
+* clear: none|left|right|both;
 
 ```css
 .clear-left {
@@ -574,7 +555,7 @@ Clear permet alors que l'item ait un impact sur la taille de son parent.
 
 La propriété position permet d'utiliser les propriétés `top`, `right`, `bottom` et `left`. Elles appliquent des positions relatives au device, à un conteneur ou à un élément.
 
-> `position`: absolute | fixed | relative | static
+* position: absolute|fixed|relative|static
 
 #### Static
 
@@ -605,7 +586,7 @@ Une position relative est positionnée par rapport à son origine, sa hauteur et
 
 La positon du premier au neuvième plan des éléments positionnés peut être défini par la propriété z-index. Par défaut les plans sont définis par ordre de déclaration des éléments et la mise en page est en lien avec l'organisation du document. Un index plus élevé se positionne au dessus d'un index inférieur.
 
-> `z-index`: auto|number;
+* z-index: auto|number;
 
 Les éléments enfants d'un bloc z-indexés héritent de l'index et de la hiérarchie du plan.
 
@@ -620,5 +601,3 @@ ___
 👨🏻‍💻 Manipulation
 
 Positionnezles éléments de votre page en utilisant les classes pertinentes en rapport avec les valeurs de propriété dans les bons fichiers puis appliquez vos classes sur votre document html.
-
-___
