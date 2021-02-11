@@ -11,13 +11,11 @@ ___
 
 Il existe de nombreux frameworks CSS et Bootstrap est l'un d'entre eux.
 
-* 🔗 [bootstrap](https://getbootstrap.com/)
+[Bootstrap](https://getbootstrap.com/)
 
-* 🔗 [materialize](https://materializecss.com/)
+[Materialize](https://materializecss.com/)
 
-* 🔗 [bulma](https://bulma.io/)
-
-* ...
+[Bulma](https://bulma.io/)
 
 Il possèdent tous le même principe, le cadre met à disposition des classes avec des règles qui leur sont reliés. En utilisant une classe sur votre élément html il se stylise.
 
@@ -25,9 +23,9 @@ ___
 
 ## 📑 Installation
 
-* 🔗 [getting-started](https://getbootstrap.com/docs/3.4/getting-started/)
-
 Plusieurs solution d'installation.
+
+[Getting Started](https://getbootstrap.com/docs/3.4/getting-started/)
 
 ### 🏷️ **CDN**
 
@@ -55,9 +53,7 @@ Il suffit de faire faire une installation locale ou globale avec npm mais il res
 
 ### 🏷️ **Webpack**
 
-* 🔗 [webpack](https://getbootstrap.com/docs/4.0/getting-started/webpack/)
-
-Il suffit de faire faire une installation avec un package manager
+Il suffit de faire une installation avec un package manager
 
 #### Avantage
 
@@ -75,19 +71,19 @@ Bootstrap est dépendant pour son JavaScript de la librairie jquery et popper.js
 npm install bootstrap jquery popper.js --save
 ```
 
-*index.js*
+* index.js
 
 ```js
 import 'bootstrap';
 ```
 
-*index.scss*
+* index.scss
 
 ```scss
 @import "~bootstrap/scss/bootstrap";
 ```
 
-*index.html*
+* index.html
 
 ```html
 <link rel="stylesheet" type="text/css" href="dist/index.css" />
@@ -107,9 +103,9 @@ ___
 
 ## 📑 Usage
 
-* 🔗 [navbar](https://getbootstrap.com/docs/4.0/components/navbar/)
-
 L'utilisation de Bootstrap est relativement simple, il suffit de se référer à sa documentation. Prenons l'exemple du composant NavBar, rendez vous sur la documentation est appliquez une syntaxe HTML possédant les classes pour styliser suffisamment votre navigation afin de lui appliquer les styles de la navbar Bootstrap.
+
+[Nvbar](https://getbootstrap.com/docs/4.0/components/navbar/)
 
 ___
 
@@ -121,9 +117,10 @@ ___
 
 ## 📑 Gride
 
-* 🔗 [grid](https://getbootstrap.com/docs/4.0/layout/grid/)
 
 Une fonctionnalité nous permettant de nous sensibiliser à l'application de propriétés en fonction d'une taille d'affichage disponible et le layout gride.
+
+[Grid](https://getbootstrap.com/docs/4.0/layout/grid/)
 
 Bootstrap part du principe que vos éléments peuvent être contenus dans une grille via la classe container. La grille possède des lignes. Une ligne possède 12 colonnes, ainsi vous pouvez demander à vos éléments d'occuper un nombre de colonne désiré et ce en fonction d'un point de rupture.
 
@@ -143,7 +140,7 @@ Bootstrap part du principe que vos éléments peuvent être contenus dans une gr
 </div>
 ```
 
-* 🔗 [grid-options](https://getbootstrap.com/docs/4.0/layout/grid/#grid-options)
+[Grid Pptions](https://getbootstrap.com/docs/4.0/layout/grid/#grid-options)
 
 Vous pouvez alors dimensionner et juxtaposer vos éléments en fonction d'un affichage disponible.
 
@@ -156,6 +153,7 @@ Vous pouvez alors dimensionner et juxtaposer vos éléments en fonction d'un aff
   </div>
 </div>
 ```
+
 ___
 
 👨🏻‍💻 Manipulation
@@ -170,6 +168,4 @@ ___
 
 👨🏻‍💻 Manipulation
 
-Répartissez vous le travail pour que chaque membre d'équipe produise une ou plusieurs pages afin d'avoir les interfaces utilisateur statique de vos site web en utilisant le scss et Bootstrap. Attention s'il y a des éléments de librairie commune, vous devez à la fin synchroniser votre travail et que chacu possède une version complète up to date.
-
-___
+Produisez une ou plusieurs pages afin d'avoir les interfaces utilisateur statique de vos site web en utilisant le scss et Bootstrap.

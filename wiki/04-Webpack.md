@@ -6,14 +6,13 @@ ___
 
 ## 📑 Installation
 
-🔗 [webpack](https://webpack.js.org/)
-
-Vous êtes déjà dans un projet où webpack est configuré.
+Si vous êtes déjà dans un projet où webpack est configuré.
 
 ```bash
 npm install
 ```
 
+🔗 [webpack](https://webpack.js.org/)
 
 ### 🏷️ **Démarrer le serveur**
 
@@ -30,11 +29,8 @@ CTRL + C
 #### Avantage
 
 * Vous possédez un serveur et pouvez observer le réseau afin d'être informé des erreurs de chargement.
-
 * L'ensemble de vos fichiers CSS et JavaScript reliés avec la règle import sont compilés en un seul fichier optimisé pour n'avoir qu'un lien vers vos sources.
-
 * Vous pouvez écrire du SCSS et du JavaScript moderne.
-
 * Vous avez un hot reload de vos pages web à chaque modification d'une source
 
 #### Contrainte
@@ -90,7 +86,7 @@ new BrowserSyncPlugin({
 
 * Une connaissance de l'outil est requise.
 
-🔗 [configuration](https://webpack.js.org/configuration/)
+🔗 [Configuration](https://webpack.js.org/configuration/)
 
 ___
 
@@ -102,22 +98,18 @@ ___
 
 ## 📑 SCSS
 
-**Faire du CSS c'est bien, faire du SCSS c'est mieux.**
+> Faire du CSS c'est bien, faire du SCSS c'est mieux.
 
 Le SCSS est un langage ayant les structures itératives, les listes, les conditions, les fonctions et autre. Il permet alors d'écrire plus efficacement le CSS et est assez standard sur les frameworks front-end.
 
 Loin d'apprendre maintenant la syntaxe sur le tas nous pouvons constater des apports:
 
 * En passant vos css en scss, chaque import fusionnera les fichiers pour n'en faire qu'un en css.
-
 * Vous pourrez importer le scss de bootstrap par exemple pour avoir access à leur couleur ou autre variables
-
 * Vous pouvez imbriquer vos styles et partir à l'exploration syntaxique du scss.
 
 ___
 
 👨🏻‍💻 Manipulation
 
-Sortez votre css du répertoire public et passez le en scss, attention vous serez maintenant dépendant du compiler associé à webpack et quand vous travaillez vous devez posséder cet environnement. Le scss situé dans src correspond à celui de vo composants d'affichage, vous pouvez utiliser le dossier assets pour caractériser celui des fichiers scss de type librairie.
-
-___
+Sortez votre css du répertoire public et passez le en scss, attention vous serez maintenant dépendant du compiler associé à webpack et quand vous travaillez vous devez posséder cet environnement. Le scss situé dans src correspond à celui de vos composants d'affichage, vous pouvez utiliser le dossier assets pour caractériser celui des fichiers scss de type librairie.

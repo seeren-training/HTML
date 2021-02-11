@@ -567,7 +567,7 @@ Une position fixée est relative au device et ne prend pas part au défilement d
 
 #### Absolute
 
-Une position absolue définit une positon à un élément `relatif à la positon d'un nœud parent positionné` ou au body du document. Contrairement à une position fixe `l'élément est dans le flux du scroll` et peut être défilé.
+Une position absolue définit une positon à un élément `relatif à la positon d'un nœud parent` positionné ou au body du document. Contrairement à une position fixe `l'élément est dans le flux` du scroll et peut être défilé.
 
 ```css
 .rectangle {
@@ -600,4 +600,4 @@ ___
 
 👨🏻‍💻 Manipulation
 
-Positionnezles éléments de votre page en utilisant les classes pertinentes en rapport avec les valeurs de propriété dans les bons fichiers puis appliquez vos classes sur votre document html.
+Positionnez les éléments de votre page en utilisant les classes pertinentes en rapport avec les valeurs de propriété dans les bons fichiers puis appliquez vos classes sur votre document html.
