@@ -366,6 +366,7 @@ Les unités relatives sont à privilégier pour un affichage adaptatif en foncti
 
 |Unité|Description|
 |--|--|
+|em|Relative à la font-size héritée|
 |ex|Relative à la hauteur de la font-size héritée|
 |ch|Relative à la largeur de la font-size héritée|
 |rem|Relative à la font-size héritée par l'élément racine|
