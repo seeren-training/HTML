@@ -108,7 +108,7 @@ Nous pouvons séparer les balises en deux catégories, les structurantes et les 
 
 Dans le head elles représentent des information additionnelles.
 
-**Meta**: possède généralement `name` et `content` pour définir le type de la meta et la valeur associée. S'utilise également avec d'autres attributs comme le `charset`.
+Meta: possède généralement `name` et `content` pour définir le type de la meta et la valeur associée. S'utilise également avec d'autres attributs comme le `charset`.
 
 ```html
 <meta charset="utf-8" />
@@ -118,19 +118,19 @@ Dans le head elles représentent des information additionnelles.
 <meta name="description" content="La description de la page." />
 ```
 
-**Title**: Affiche le titre de la page dans l'onglet du navigateur
+Title: Affiche le titre de la page dans l'onglet du navigateur
 
 ```html
 <title>Ma page web</title>
 ```
 
-**Link**: utilise `rel` pour déterminer le type de relation avec le média chargé avec `href`.
+Link: utilise `rel` pour déterminer le type de relation avec le média chargé avec `href`.
 
 ```html
 <link type="text/css" rel="stylesheet" href="mon-style.css" />
 ```
 
-**Script**: utilise `src` pour charger le média.
+Script: utilise `src` pour charger le média.
 
 ```html
 <script type="text/javascript" src="mon-script.js"></script>
@@ -140,25 +140,25 @@ Dans le head elles représentent des information additionnelles.
 
 Dans le body généralement elles structurent du texte en permettant une découpe en ligne comme du gras, un lien. Elles sont de tyle `inline`. 
 
-**Span**: sectione un texte afin d'appliquer un repère pour le css, javascript ou autre.
+Span: sectione un texte afin d'appliquer un repère pour le css, javascript ou autre.
 
 ```html
 Ceci est <span class="rouge">ma première</span> page web
 ```
 
-**A**: crée des liens, utilise href pour définir la cible, target pour décider de l'emplacement de l'ouverture de la cible.
+A: crée des liens, utilise href pour définir la cible, target pour décider de l'emplacement de l'ouverture de la cible.
 
 ```html
 <a href="http://google.com" targer="_blank">Google</a>
 ```
 
-**Img**: utilise src pour charger le média et alt pour un texte alternatif si le média n'est pas chargé.
+Img: utilise src pour charger le média et alt pour un texte alternatif si le média n'est pas chargé.
 
 ```html
 <img src="mon-image.jpg" alt="Mon image" />
 ```
 
-**Strong**: définit un texte comme important.
+Strong: définit un texte comme important.
 
 ```html
 Ceci est <strong>ma première page web</strong>
@@ -267,7 +267,7 @@ ___
 
 Les éléments qui receuille des données doivent être contenu dans un formulaire.
 
-**Form**: utilise `method` pour définir la méthode HTTP de communicaiton et `action` pour cibler la page qui est responsable du traitement de l'information envoyée.
+Form: utilise `method` pour définir la méthode HTTP de communicaiton et `action` pour cibler la page qui est responsable du traitement de l'information envoyée.
 
 ```html
 <form method="post" action=""></form>
@@ -326,4 +326,4 @@ ___
 
 👨🏻‍💻 Manipulation
 
-Complétez le fichier `index.html` pour y ajouter un ou des formulaires en fonction de votre cas de figure. Une barre de recherche, un abonement news letter ou un formulaire de contact.
+Complétez le fichier `index.html` pour y ajouter un ou des formulaires en fonction de votre cas de figure. Une barre de recherche, un abonnement news lettre ou un formulaire de contact.
