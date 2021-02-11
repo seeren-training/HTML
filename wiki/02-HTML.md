@@ -263,11 +263,11 @@ ___
 
 ## 📑 Formulaires
 
-[Formulaires](https://developer.mozilla.org/fr/docs/Web/HTML/Element#Formulaires)
-
 Les éléments qui receuille des données doivent être contenu dans un formulaire.
 
 Form: utilise `method` pour définir la méthode HTTP de communicaiton et `action` pour cibler la page qui est responsable du traitement de l'information envoyée.
+
+[Formulaires](https://developer.mozilla.org/fr/docs/Web/HTML/Element#Formulaires)
 
 ```html
 <form method="post" action=""></form>
