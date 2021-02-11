@@ -70,7 +70,7 @@ Les balises indiquent au navigateur comment afficher le document, certaines bali
 <div></div>
 ```
 
-* Auto fermante: ne contiennent pas d’information. En HTML le `/` de fin est facultatif.
+* Auto fermante: ne contiennent pas d’information. En HTML le "/" de fin est facultatif.
 
 ```html
 <br/>

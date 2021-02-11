@@ -140,7 +140,7 @@ Bootstrap part du principe que vos éléments peuvent être contenus dans une gr
 </div>
 ```
 
-[Grid Pptions](https://getbootstrap.com/docs/4.0/layout/grid/#grid-options)
+[Grid Options](https://getbootstrap.com/docs/4.0/layout/grid/#grid-options)
 
 Vous pouvez alors dimensionner et juxtaposer vos éléments en fonction d'un affichage disponible.
 
