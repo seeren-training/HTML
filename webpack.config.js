@@ -18,11 +18,6 @@ module.exports = {
                 loader: 'babel-loader',
             },
             {
-                test: /\.html$/,
-                exclude: /node_modules/,
-                use: 'raw-loader',
-            },
-            {
                 test: /\.scss$/,
                 exclude: /node_modules/,
                 use: [
@@ -34,15 +29,12 @@ module.exports = {
             {
                 test: /\.(jpg|png|woff|woff2|eot|ttf|svg)$/,
                 loader: 'file-loader',
-                options: {
-                    name: '[path][name].[ext]',
-                },
             },
         ],
     },
     watchOptions: {
         ignored: [
-            /node_modules/,
+            '/node_modules/',
         ],
     },
     plugins: [
