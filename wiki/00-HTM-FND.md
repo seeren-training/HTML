@@ -14,8 +14,8 @@ ___
 
 * [Env](https://github.com/seeren-training/HTML/wiki/01)
 * [HTML](https://github.com/seeren-training/HTML/wiki/02)
-* [CSS](https://github.com/seeren-training/HTML/wiki/03)
-* [Env](https://github.com/seeren-training/HTML/wiki/04)
+* [SEO](https://github.com/seeren-training/HTML/wiki/03)
+* [CSS](https://github.com/seeren-training/HTML/wiki/04)
 * [Bootstrap](https://github.com/seeren-training/HTML/wiki/05)
 * [Next](https://github.com/seeren-training/HTML/wiki/06)
 

@@ -92,51 +92,82 @@ L'ensemble des balises possèdent des attributs communs et certaines des attribu
 <img src="mon-image.jpg"></div>
 ```
 
-### 🏷️ **Reference**
+___
 
-[HTML Tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
+## 📑 Les balises du head
+
+L'élément head contient principalement des données destinées au traitement automatisé et pas nécessairement lisibles par des humains.
+
+### 🏷️ **Titre**
+
+L'élément `<title>` est une métadonnée qui représente l'intitulé du document HTML global (non le contenu du document).
+
+```html
+<title>Le titre de la page</title>
+```
+
+### 🏷️ **Métadonnées**
+
+Les métadonnées sont des données qui décrivent des données!
+
+#### Encodage
+
+Cette meta définie l'encodage des caractères du document.
+
+```html
+<meta charset="utf-8">
+```
+
+#### Autres
+
+De nombreux éléments `<meta>` contiennent les attributs name et content:
+
+* name définit le type de méta élément ; le type d'informations  contenu.
+* content définit le contenu réel de la métadonnée.
+
+```html
+<meta name="author" content="Chris Mills">
+```
+
+```html
+<meta name="description" content="Analyse de la structure du head">
+```
+
+Votre page pourra ainsi apparaître plus haut dans la liste de recherches par pertinence créée par un moteur de recherche, ce processus se nomme Search Engine Optimization ou SEO.
+
+### 🏷️ **Liens**
+
+L'élément HTML <link> définit la relation entre le document courant et une ressource externe.
+
+#### Icone
+
+La petite favicône, qui existe depuis de nombreuses années, a été la première icône de ce type, une icône de 16 x 16 pixels utilisée dans de multiples endroits.
+
+```html
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+```
+
+#### CSS et JavaScript
+
+À peu près tous les sites web que vous rencontrerez actuellement utiliseront des CSS pour agrémenter leur aspect, et JavaScript pour assurer les fonctionnalités interactives, telles que lecteurs vidéo, cartes géographiques, jeux et plus encore. Ceux-ci sont le plus souvent appliqués à une page web en utilisant respectivement les éléments `<link>` et `<script>`.
+
+```html
+<link rel="stylesheet" href="mon_fichier_css.css">
+```
+
+La baslise script peut contenir du contenu et doit ainsi se refermer.
+
+```html
+<script src="mon-fichier-js.js"></script>
+```
 
 ___
 
-## 📑 Structures
+## 📑 Les balises du body
 
 Nous pouvons séparer les balises en deux catégories, les structurantes et les non structurantes.
 
 ### 🏷️ **Non structurante**
-
-#### Head
-
-Dans le head elles représentent des information additionnelles.
-
-Meta: possède généralement `name` et `content` pour définir le type de la meta et la valeur associée. S'utilise également avec d'autres attributs comme le `charset`.
-
-```html
-<meta charset="utf-8" />
-```
-
-```html
-<meta name="description" content="La description de la page." />
-```
-
-Title: Affiche le titre de la page dans l'onglet du navigateur
-
-```html
-<title>Ma page web</title>
-```
-
-Link: utilise `rel` pour déterminer le type de relation avec le média chargé avec `href`.
-
-```html
-<link type="text/css" rel="stylesheet" href="mon-style.css" />
-```
-
-Script: utilise `src` pour charger le média.
-
-```html
-<script type="text/javascript" src="mon-script.js"></script>
-```
-
-#### Body
 
 Dans le body généralement elles structurent du texte en permettant une découpe en ligne comme du gras, un lien. Elles sont de tyle `inline`. 
 
@@ -215,7 +246,19 @@ Il est important pour une problématique de référencement d'avoir décalré un
 <p>Paragraphe</p>
 ```
 
-#### Listes
+### 🏷️ **Reference**
+
+Nous trouvons lal lsite complète des balises HTML en se rendant à l'adresse du lien suivant:
+
+[HTML Tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
+
+___
+
+## 📑 Les balises sémantiques
+
+Certaines balises expriment une sémantique permettant l'interprétation du contenu par un moteur de recherche ou par un navigateur pour leur mise en forme. Leur syntaxe diffère des autres balises de par leur règle.
+
+### 🏷️ **Listes**
 
 Les listes non ordonnées peuvent s'`encapsuler` . Une `liste` possède un `élément de liste` et n'autorise pas d'autres éléments de type block à part une autre liste.
 
@@ -232,7 +275,7 @@ Les listes non ordonnées peuvent s'`encapsuler` . Une `liste` possède un `él�
 <ul>
 ```
 
-#### Tableaux
+### 🏷️ **Tableaux**
 
 Ils permettent une mise en forme sommaire mais utile, largement utilisés avant l'apparition du CSS. Il est possible de faire glisser visuelment une cellule sur pluieurs colonnes ou lignes en utilisant leur attributs.
 
