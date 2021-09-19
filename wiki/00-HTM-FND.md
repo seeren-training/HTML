@@ -12,7 +12,7 @@ ___
 
 ## Sommaire
 
-* [Env](https://github.com/seeren-training/HTML/wiki/01)
+* [Outils](https://github.com/seeren-training/HTML/wiki/01)
 * [HTML](https://github.com/seeren-training/HTML/wiki/02)
 * [SEO](https://github.com/seeren-training/HTML/wiki/03)
 * [CSS](https://github.com/seeren-training/HTML/wiki/04)

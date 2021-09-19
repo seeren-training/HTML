@@ -1,4 +1,4 @@
-# IDE
+# Outils
 
 *  🔖 **VSCode**
 *  🔖 **Navigateur**
